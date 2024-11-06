@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+.big-container {
+    font-family: Montserrat, serif;
+    display: grid;
+    
+    grid-template-rows: 1fr 10fr 3fr;
+}
+.main-container {
+    font-family: Montserrat, serif;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: repeat(1);
+}
+
+
+.header {
+    
+    background-color: rgb(12, 12, 65);
+    display: grid;
+    grid-template-columns: 6fr 1fr 1fr;
+    
+}
+
+.name {
+    color: rgb(215, 243, 241);
+    margin-left: 10px;
+}
+
+.naming {
+    font-size: xx-large;
+
+}
+
+.place {
+    font-size: medium;
+    margin-left: 9px;
+
+}
+
+
+.left-bar {
+    margin: 1em;
+    padding: 1em;
+    /* border-style: groove; */
+    background-color: rgb(215, 243, 241);
+
+}
+
+.info {
+    display: grid;
+    margin-left: 10px;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+
+
+.map {
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+.contacts {
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+.contacts h3 {
+    margin-top: 20px;
+    color: chartreuse;
+    
+}
+.map img {
+    width: 50%;
+    height: auto;
+    margin-top: 10px;
+    
+}
+
+.idem {
+    margin-left: 20px;
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+
+.hover-effect-btn {
+    position: relative;
+    width: 100%;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(12, 12, 65); /* Настройка цвета и прозрачности для блока с заголовком */
+    transition: background 0.5s ease;
+  }
+  .hover-effect-btn:hover .overlay {
+    display: block;
+    background: blue; /* Настройка цвета и прозрачности для блока с заголовком при наведении */
+  }
+  .title {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 25%; /* Отступ сверху */
+    font-size: 1.900em; /* Размер текста заголовка */
+    text-align: center;
+    text-transform: uppercase; /* Заглавные буквы */
+    color: white; /* Цвет заголовка */
+    z-index: 1;
+    transition: top .5s ease;
+  }
+  .hover-effect-btn:hover .title {
+    top: 10%; /* Отступ сверху при наведении */
+  }
+  .button {
+    position: absolute;
+    width: 100%;
+    left:0;
+    top: 65%; /* Отступ сверху */
+    text-align: center;
+    opacity: 0;
+    transition: opacity .35s ease;
+  }
+  .button a {
+    padding: 15px 40px; /* Отступ */
+    text-align: center;
+    background: #a9ff1e; /* Цвет кнопки */
+    color: white; /* Цвет текста */
+    border: 1px solid white; /* Ширина, стиль и цвет границы */
+    z-index: 1; 
+  }
+  .hover-effect-btn:hover .button {
+    opacity: 1;
+  }
+       
